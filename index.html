@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1ab368dd12.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="background-section">
+    <div class="bg">
+        <div class="logincard">
+
+            <h2 class="heading">Login</h2>
+
+            <form id="loginForm">
+                    <label class="label-username" for="username">
+                        <i class="fas fa-user"></i> 
+                    </label>
+                <input type="text" class="inputval" id="username" name="username" placeholder="Your name"><br><br>
+                <p id="nameErrMsg" class="inputerror"></p>
+          
+             <label class="label-passwrd" for="password"><i class="fas fa-lock iconpass"></i></label>
+                <input type="password" class="inputval" id="password" name="password"  placeholder="Password"><br><br>
+                <p id="passwdErrMsg" class="inputerror"></p>
+      
+                
+                <div class="btn-card">
+                    <button class="btn" type="submit">Login</button>
+                </div>
+               
+            </form>
+            <p class="loginsuccess" id="errorMessage"></p>
+            <p  class="error" id="error"></p>
+            <!-- remove one p element -->
+       </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html> 
+
